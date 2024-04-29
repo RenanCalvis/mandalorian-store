@@ -1,0 +1,69 @@
+.list-itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
+    gap: 40px;
+  }
+  
+  .img-container {
+    width: auto;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    background: var(--W);
+    border-radius: 4px;
+  }
+  
+  .sell-item {
+    background: var(--c2);
+    width: 270px;
+    height: 275px;
+    border: 2px solid var(--c3);
+    border-radius: 4px;
+  }
+  
+  .content-infos-container {
+    padding: 10px 10px 5px;
+    color: #ffffff;
+  }
+  
+  .name-item {
+    font-size: 1.125rem;
+    color: var(--W);
+  }
+  
+  .infos-item {
+    display: flex;
+    padding-top: 4px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .rating-value,
+  .details-rating-value {
+    display: flex;
+    font-size: 15px;
+    color: var(--c4);
+    position: relative;
+    align-items: baseline;
+  }
+  
+  .rating-value::before,
+  .details-rating-value::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/star-solid.svg");
+    width: 19px;
+    height: 17px;
+    margin-right: 4px;
+  }
+  
+  .value-item {
+    display: flex;
+    font-size: 25px;
+    align-items: baseline;
+  }
+  .value-detail {
+    font-size: 12px;
+    padding-right: 7px;
+    color: var(--c1);
+  }
