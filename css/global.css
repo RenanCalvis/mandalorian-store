@@ -25,6 +25,7 @@
     margin: 0;
     font-family: "Roboto", sans-serif;
     background: var(--c1);
+    box-sizing: border-box;
   }
   
   h1,
@@ -83,6 +84,7 @@
     justify-content: end;
     align-items: center;
     margin-top: 45px;
+    width: auto;
   }
   .search-container input{
     height: 40px;
@@ -118,7 +120,23 @@
     font-family: "Mandalore";
     font-size: 2.5rem;
     color: var(--p1);
-    margin-bottom: 60px;
-    margin-top: 60px;
-    padding-left: 20px;
+    margin: 60px auto;
+  }
+
+  @media (max-width: 615px){
+    .logo {
+      font-size: 2rem;
+      padding: 0 20px;
+    }
+    .title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .search-container {
+      justify-content: start;
+    }
+    .search-container input{
+      width: 100%;
+    }
   }

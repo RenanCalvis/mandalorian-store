@@ -1,69 +1,99 @@
 .list-itens {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
+  justify-content: center;
+  gap: 40px;
+}
+
+.img-container {
+  width: auto;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  background: var(--W);
+  border-radius: 4px;
+}
+
+.sell-item {
+  background: var(--c2);
+  width: 270px;
+  height: 275px;
+  border: 2px solid var(--c3);
+  border-radius: 4px;
+}
+
+.content-infos-container {
+  padding: 10px 10px 5px;
+  color: #ffffff;
+}
+
+.name-item {
+  font-size: 1.125rem;
+  color: var(--W);
+}
+
+.infos-item {
+  display: flex;
+  padding-top: 4px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.rating-value,
+.details-rating-value {
+  display: flex;
+  font-size: 1.04rem;
+  color: var(--c4);
+  position: relative;
+  align-items: baseline;
+}
+
+.rating-value::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/star-solid.svg");
+  width: 19px;
+  height: 14px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.value-item {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: baseline;
+}
+.value-detail {
+  font-size: 0.75rem;
+  padding-right: 7px;
+  color: var(--c1);
+}
+
+@media (max-width: 615px) {
+  .list-itens {
+    grid-template-columns: repeat(auto-fit, minmax(165px, max-content));
+    gap: 20px;
   }
-  
   .img-container {
-    width: auto;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    background: var(--W);
-    border-radius: 4px;
+    height: 130px;
   }
-  
+
   .sell-item {
-    background: var(--c2);
-    width: 270px;
-    height: 275px;
-    border: 2px solid var(--c3);
-    border-radius: 4px;
+    width: 170px;
+    height: 210px;
   }
-  
-  .content-infos-container {
-    padding: 10px 10px 5px;
-    color: #ffffff;
-  }
-  
   .name-item {
-    font-size: 1.125rem;
-    color: var(--W);
+    font-size: 0.875rem;
   }
-  
-  .infos-item {
-    display: flex;
-    padding-top: 4px;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .rating-value,
-  .details-rating-value {
-    display: flex;
-    font-size: 15px;
-    color: var(--c4);
-    position: relative;
-    align-items: baseline;
-  }
-  
-  .rating-value::before,
-  .details-rating-value::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../img/star-solid.svg");
-    width: 19px;
-    height: 17px;
-    margin-right: 4px;
-  }
-  
   .value-item {
-    display: flex;
-    font-size: 25px;
-    align-items: baseline;
+    font-size: 1rem;
   }
-  .value-detail {
-    font-size: 12px;
-    padding-right: 7px;
-    color: var(--c1);
+  .rating-value {
+    font-size: 0.875rem;
   }
+  .rating-value::before {
+    width: 14px;
+    height: 12px;
+  }
+}
