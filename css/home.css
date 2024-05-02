@@ -39,8 +39,7 @@
   align-items: baseline;
 }
 
-.rating-value,
-.details-rating-value {
+.rating-value {
   display: flex;
   font-size: 1.04rem;
   color: var(--c4);

@@ -31,7 +31,7 @@ function createSellItem(item) {
   sellItem.innerHTML = `
   <a href="item.html?name=${item.name}">
       <div class="img-container">
-        <img src="${item.image}" alt="Item" class="img-item" />
+        <img src="${item.image}" alt="Item" class="img-item width="255px"  height="180px"/>
       </div>
   
       <div class="content-infos-container">

@@ -1,11 +1,5 @@
 import searchItens from "./modules/searchItens.js";
 
-// const detailsImg = document.getElementById('details-image');
-// const detailsName = document.querySelector('.details-name-item');
-// const detailsRating = document.querySelector('.details-rating-value');
-// const detailsPrice = document.querySelector('.details-price');
-// const description = document.querySelector('.description');
-// const avaiable = document.querySelector('.isAvaiable');
 const title = document.querySelector('.title');
 
 const searchInput = document.getElementById('search-input');
@@ -24,15 +18,6 @@ const urlParams = new URLSearchParams(location.search);
 async function showItemDetail (itemName){
 
         const showItem = await searchItens(itemName);
-        // if(showItem.length != 0){
-        //     detailsImg.src = showItem[0].image;
-        //     detailsName.innerText = showItem[0].name;
-        //     detailsRating.innerText = showItem[0].rating;
-        //     detailsPrice.innerText = showItem[0].price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).replace('R$','').trim();
-        //     description.innerText = showItem[0].description;
-        // }else{
-        //     detailsItemContainer.innerHTML = `<h1 class="title container">Item não encontrado...</h1>`;
-        // }
         const itemDetails = document.createElement('div');
 
         itemDetails.classList.add('container','details-item-grid')
@@ -42,7 +27,7 @@ async function showItemDetail (itemName){
             const avaiableColor = showItem[0].isAvailable ? 'var(--c6)' : 'var(--c7)'
             
             itemDetails.innerHTML = `
-            <div class="details-img-container"><img src="${showItem[0].image}" alt="" id="details-image"/></div>
+            <div class="details-img-container"><img src="${showItem[0].image}" alt="item" id="details-image" width="560px"  height="616px"/></div>
             <div class="details-content">
                 <div class="details-value-item">
                     <span class="details-name-item" id="name">${showItem[0].name}</span>

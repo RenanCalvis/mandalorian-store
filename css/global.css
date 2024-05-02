@@ -1,9 +1,9 @@
 :root {
   --c8: #b2b2b2;
   --c7: #ad262d;
-  --c6-hover: #477a59;
+  --c6-hover: #2a6e42;
   --c5-hover: #475975;
-  --c6: #618f71;
+  --c6: #3A8454;
   --c5: #566987;
   --c4: #e4a30b;
   --c3: #4a2222;
@@ -140,7 +140,7 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.footer h3 {
+.footer h2 {
   margin-bottom: 32px;
   font: 500 1.5rem / 1.5 "Roboto", "sans-serif";
   letter-spacing: 0.0225rem;
@@ -193,7 +193,7 @@ img {
     padding: 0;
   }
 
-  .footer h3 {
+  .footer h2 {
     font-size: 1.125rem;
   }
   .footer-informativos ul {
